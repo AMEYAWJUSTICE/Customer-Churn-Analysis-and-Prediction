@@ -1,17 +1,16 @@
 
 
 ````markdown
-# 📊 Telco Customer Churn Prediction Using Machine Learning
+ Telco Customer Churn Prediction Using Machine Learning
 
-##  Project Overview
+Project Overview
 
 This project focuses on building and evaluating machine learning models to predict customer churn in a telecommunications company. The objective is to identify customers likely to discontinue service and understand the key factors influencing churn behavior.
 
 By leveraging predictive analytics, businesses can improve customer retention strategies, reduce revenue loss, and enhance service quality.
 
 ---
-
-##  Problem Statement
+ Problem Statement
 
 Telecommunication companies experience significant revenue loss due to customer churn. The challenge is to develop a predictive system that can:
 
@@ -21,11 +20,11 @@ Telecommunication companies experience significant revenue loss due to customer 
 
 ---
 
-##  Dataset Description
+  Dataset Description
 
 The dataset used is the **Telco Customer Churn Dataset**, which contains customer demographics, account information, and subscribed services.
 
-### Key Features:
+ Key Features:
 
 - `customerID` – Unique identifier (dropped during preprocessing)
 - `gender`
@@ -43,7 +42,7 @@ The dataset used is the **Telco Customer Churn Dataset**, which contains custome
 
 ---
 
-##  Project Workflow
+ Project Workflow
 
 ### 1. Data Loading & Exploration
 
@@ -59,7 +58,7 @@ A file path error was initially encountered and resolved.
 
 ---
 
-### 2. Data Cleaning & Preprocessing
+ 2. Data Cleaning & Preprocessing
 
 Key preprocessing steps included:
 
@@ -73,7 +72,7 @@ Key preprocessing steps included:
 
 ---
 
-### 3. Feature Engineering
+3. Feature Engineering
 
 - Selected important predictive variables
 - Removed redundant or highly correlated features
@@ -81,7 +80,7 @@ Key preprocessing steps included:
 
 ---
 
-### 4. Data Visualization (EDA)
+4. Data Visualization (EDA)
 
 Exploratory visualizations included:
 
@@ -96,7 +95,7 @@ Libraries used:
 
 ---
 
-### 5. Data Splitting
+ 5. Data Splitting
 
 Dataset was split into:
 
@@ -111,33 +110,33 @@ train_test_split(X, y, test_size=0.2, random_state=42)
 
 ---
 
-##  Machine Learning Models Used
+  Machine Learning Models Used
 
 Three classification models were trained and evaluated:
 
-### 1. Logistic Regression
+ 1. Logistic Regression
 
 * Accuracy: **82.04%**
 * ROC-AUC: **0.8625**
 * Best performing model overall
 
-### 2. Random Forest Classifier
+2. Random Forest Classifier
 
 * Accuracy: **78.64%**
 * Lower recall for churn class
 
-### 3. XGBoost Classifier
+3. XGBoost Classifier
 
 * Accuracy: **79.13%**
 * Balanced performance but slightly lower than Logistic Regression
 
 ---
 
-##  Best Model Selection
+ Best Model Selection
 
 Based on evaluation metrics:
 
-✔ Logistic Regression was selected as the best model due to:
+ Logistic Regression was selected as the best model due to:
 
 * Highest accuracy
 * Strong ROC-AUC score
@@ -145,7 +144,7 @@ Based on evaluation metrics:
 
 ---
 
-##  Evaluation Metrics Used
+ Evaluation Metrics Used
 
 * Accuracy Score
 * Precision
@@ -156,7 +155,7 @@ Based on evaluation metrics:
 
 ---
 
-##  Model Export
+  Model Export
 
 Trained models were saved using `joblib` for deployment:
 
@@ -167,8 +166,7 @@ xgboost_model.joblib
 ```
 
 ---
-
-##  Technologies Used
+ Technologies Used
 
 * Python 
 * Pandas
@@ -181,7 +179,7 @@ xgboost_model.joblib
 
 ---
 
-## 📈Key Insights
+Key Insights
 
 * Customers with shorter tenure are more likely to churn
 * Month-to-month contracts show higher churn rates
@@ -190,7 +188,7 @@ xgboost_model.joblib
 
 ---
 
-## Deployment Potential
+ Deployment Potential
 
 This project can be extended into a full web application using:
 
@@ -206,7 +204,7 @@ Example deployment tools:
 
 ---
 
-##  Project Structure
+ Project Structure
 
 ```
 Telco-Customer-Churn-Prediction/
@@ -231,7 +229,7 @@ Telco-Customer-Churn-Prediction/
 
 ---
 
-##  Installation
+Installation
 
 ```bash
 git clone https://github.com/your-username/churn-prediction.git
@@ -241,15 +239,15 @@ pip install -r requirements.txt
 
 ---
 
-##  Run Project
+Run Project
 
-### Run Jupyter Notebook:
+Run Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-### Run Streamlit App:
+ Run Streamlit App:
 
 ```bash
 streamlit run app/streamlit_app.py
@@ -257,7 +255,7 @@ streamlit run app/streamlit_app.py
 
 ---
 
-##  Future Improvements
+ Future Improvements
 
 * Improve model using deep learning
 * Handle class imbalance using SMOTE
@@ -266,21 +264,20 @@ streamlit run app/streamlit_app.py
 * Deploy as SaaS churn prediction tool
 
 ---
-
-##  Author
+ Author
 
 **AMEYAW ASANTE JUSTICE**
 IT | Machine Learning | Data Science | Digital Systems
 
 ---
 
-## License
+ License
 
 This project is for educational and research purposes.
 
 ---
 
-##  Acknowledgements
+ Acknowledgements
 
 * IBM Telco Dataset
 * Scikit-learn Documentation
